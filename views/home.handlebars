@@ -1,0 +1,15 @@
+<h1>Ola pessoal</h1>
+<a href="users/1"> buscar</a>
+<p>
+    {{user.nome}}
+    {{user.idade}}
+</p>
+{{#each users}}
+<p>
+    {{this}}
+</p>
+{{/each}}
+<form action="/users/register" method="post">
+    <input type="text" name="name">
+    <input type="submit" value="Enviar">
+</form>
